@@ -10,6 +10,9 @@ import * as firebase from 'firebase'
     appId: "1:427971786017:web:e93c33280bd6776c067a60"
   };
 
+  
 firebase.initializeApp(config)
 
 export const database = firebase.database().ref('/notes')
+export const auth = firebase.auth()
+export const googleProvider = new firebase.auth.GoogleAuthProvider()

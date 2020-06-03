@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-const NoteCard=(props)=>(
-    <div>{props.children}</div>
+const NoteCard = ({ children }) => (
+    <div className="jumbotron">
+        <div>{children}</div>
+    </div>
 );
 
-export default NoteCard
+export default NoteCard;
