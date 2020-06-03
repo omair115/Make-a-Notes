@@ -1,5 +1,4 @@
-import React from "react";
-
+import React from 'react'
 
 const NoteCard=(props)=>(
     <div>{props.children}</div>
