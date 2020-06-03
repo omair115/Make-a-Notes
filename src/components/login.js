@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { googleLogin, twitterLogin } from "../actions/userAction";
+import { googleLogin } from "../actions/userAction";
 
 class Login extends Component {
     componentWillMount() {
@@ -42,9 +42,7 @@ class Login extends Component {
                             Login with Google
                         </button>
 
-                        {/*<button className="btn btn-info col-sm-6" onClick={this.props.twitterLogin}>
-                            Login with Twitter
-                        </button>*/}
+                        
                     </div>
                 </div>
             </div>
@@ -60,5 +58,5 @@ function mapStateToProps(state, onwProps) {
 
 export default connect(
     mapStateToProps,
-    { googleLogin, twitterLogin }
+    { googleLogin }
 )(Login);
